@@ -1,0 +1,452 @@
+/* ========================================
+   QA Command Center — Main Theme Overrides
+   ======================================== */
+
+:root {
+    --home-bg: #1e1e2e;
+    --home-bg-secondary: #2a2d3a;
+    --home-bg-card: #303445;
+    --home-accent: #cd0952;
+    --home-accent-hover: #e0195f;
+    --home-text: #c5d0f4;
+    --home-text-muted: #8892b0;
+    --home-border: #3b3f54;
+    --home-radius: 12px;
+    --home-radius-sm: 6px;
+    --home-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --home-shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================
+   Homepage-specific styles
+   ======================================== */
+
+.home .markdown-preview-view {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 1em 3em !important;
+}
+
+.home .markdown-preview-sizer {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.home .cm-contentContainer,
+.home .cm-sizer {
+    max-width: 100% !important;
+}
+
+/* Hide frontmatter/properties on homepage */
+.home .frontmatter-container,
+.home .metadata-container,
+.home .metadata-properties-heading,
+.home .metadata-content {
+    display: none !important;
+}
+
+/* Hide horizontal rules on homepage */
+.home hr {
+    border: none;
+    margin: 0.8em 0;
+    height: 0;
+}
+
+/* Title styling — gradient accent */
+.home h1 {
+    text-align: center;
+    font-size: 2.4em;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+    margin-top: 0.5em;
+    background: linear-gradient(135deg, var(--home-accent), #ff6b9d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.home h2 {
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid var(--home-border);
+    margin-top: 1.5em;
+    color: var(--home-text);
+}
+
+/* Quote / Inspirational text */
+.home .markdown-preview-view > p:first-of-type {
+    text-align: center;
+    font-style: italic;
+    color: var(--home-text-muted);
+    font-size: 0.95em;
+    margin-bottom: 1em;
+}
+
+/* ========================================
+   Search bar styling (home-tab plugin)
+   ======================================== */
+
+.home .block-language-search-bar,
+.home .search-bar-container,
+.home .home-tab-search-bar {
+    background: var(--home-bg-secondary) !important;
+    border-radius: var(--home-radius) !important;
+    border: 1px solid var(--home-border) !important;
+    padding: 8px 16px !important;
+    box-shadow: var(--home-shadow-inset) !important;
+    max-width: 700px;
+    margin: 0.5em auto !important;
+}
+
+.home .search-bar-container input,
+.home .home-tab-search-bar input,
+.home .block-language-search-bar input {
+    background: transparent !important;
+    color: var(--home-text) !important;
+    font-size: 1em;
+    border: none !important;
+}
+
+/* ========================================
+   Button styling (buttons plugin)
+   ======================================== */
+
+.home .block-language-button .button-default,
+.home .home-button,
+.home button.button-default {
+    background: var(--home-bg-secondary) !important;
+    color: var(--home-text) !important;
+    border: 1px solid var(--home-border) !important;
+    border-radius: var(--home-radius) !important;
+    padding: 14px 20px !important;
+    font-size: 0.95em !important;
+    font-weight: 500 !important;
+    cursor: pointer;
+    transition: all 0.2s ease !important;
+    box-shadow: var(--home-shadow) !important;
+    width: 100% !important;
+    text-align: center !important;
+    display: block !important;
+}
+
+.home .block-language-button .button-default:hover,
+.home .home-button:hover,
+.home button.button-default:hover {
+    background: var(--home-bg-card) !important;
+    border-color: var(--home-accent) !important;
+    color: #fff !important;
+    box-shadow: 0 4px 12px rgba(205, 9, 82, 0.3) !important;
+    transform: translateY(-1px);
+}
+
+/* Remove button plugin wrapper padding */
+.home .block-language-button {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* ========================================
+   Multi-column-markdown styling
+   ======================================== */
+
+.home .multi-column-container {
+    gap: 1em !important;
+}
+
+.home .multi-column-column {
+    padding: 0 0.5em !important;
+}
+
+/* ========================================
+   Callout styling
+   ======================================== */
+
+.home .callout {
+    background: var(--home-bg-secondary) !important;
+    border-radius: var(--home-radius) !important;
+    border: 1px solid var(--home-border) !important;
+    box-shadow: var(--home-shadow) !important;
+    margin: 0.5em 0 !important;
+    padding: 0.8em !important;
+    overflow: hidden;
+}
+
+.home .callout-title {
+    font-weight: 600;
+    font-size: 0.95em;
+    padding: 0.2em 0;
+}
+
+.home .callout-content {
+    padding: 0.3em 0 0 0;
+}
+
+/* Callout accent colors */
+.home .callout[data-callout="bug"] {
+    border-left: 3px solid #e74c3c !important;
+}
+.home .callout[data-callout="bug"] .callout-title {
+    color: #e74c3c !important;
+}
+
+.home .callout[data-callout="success"] {
+    border-left: 3px solid #2ecc71 !important;
+}
+.home .callout[data-callout="success"] .callout-title {
+    color: #2ecc71 !important;
+}
+
+.home .callout[data-callout="warning"] {
+    border-left: 3px solid #f39c12 !important;
+}
+.home .callout[data-callout="warning"] .callout-title {
+    color: #f39c12 !important;
+}
+
+.home .callout[data-callout="check"] {
+    border-left: 3px solid #3498db !important;
+}
+.home .callout[data-callout="check"] .callout-title {
+    color: #3498db !important;
+}
+
+.home .callout[data-callout="sprint"] {
+    border-left: 3px solid var(--home-accent) !important;
+}
+.home .callout[data-callout="sprint"] .callout-title {
+    color: var(--home-accent) !important;
+}
+
+.home .callout[data-callout="info"] {
+    border-left: 3px solid #6c71c4 !important;
+}
+.home .callout[data-callout="info"] .callout-title {
+    color: #6c71c4 !important;
+}
+
+.home .callout[data-callout="note"] {
+    border-left: 3px solid #5dade2 !important;
+}
+.home .callout[data-callout="note"] .callout-title {
+    color: #5dade2 !important;
+}
+
+.home .callout[data-callout="example"] {
+    border-left: 3px solid #a78bfa !important;
+}
+.home .callout[data-callout="example"] .callout-title {
+    color: #a78bfa !important;
+}
+
+.home .callout[data-callout="abstract"] {
+    border-left: 3px solid #38bdf8 !important;
+}
+.home .callout[data-callout="abstract"] .callout-title {
+    color: #38bdf8 !important;
+}
+
+.home .callout[data-callout="clock"] {
+    border-left: 3px solid #fbbf24 !important;
+}
+.home .callout[data-callout="clock"] .callout-title {
+    color: #fbbf24 !important;
+}
+
+.home .callout[data-callout="new"] {
+    border-left: 3px solid #34d399 !important;
+}
+.home .callout[data-callout="new"] .callout-title {
+    color: #34d399 !important;
+}
+
+.home .callout[data-callout="link"] {
+    border-left: 3px solid #60a5fa !important;
+}
+.home .callout[data-callout="link"] .callout-title {
+    color: #60a5fa !important;
+}
+
+/* ========================================
+   Table styling
+   ======================================== */
+
+.home table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 0.9em;
+    border-radius: var(--home-radius-sm);
+    overflow: hidden;
+}
+
+.home thead tr {
+    background: var(--home-bg-card) !important;
+}
+
+.home th {
+    color: var(--home-text) !important;
+    font-weight: 600;
+    padding: 8px 12px !important;
+    border-bottom: 2px solid var(--home-border) !important;
+}
+
+.home td {
+    padding: 6px 12px !important;
+    border-bottom: 1px solid var(--home-border) !important;
+}
+
+.home tbody tr:hover {
+    background: rgba(205, 9, 82, 0.08) !important;
+}
+
+/* Calendar week table — clickable day cells */
+.home .callout[data-callout="note"] table {
+    text-align: center;
+}
+
+.home .callout[data-callout="note"] table td {
+    padding: 8px 4px !important;
+}
+
+.home .callout[data-callout="note"] table a {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: var(--home-radius-sm);
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.home .callout[data-callout="note"] table a:hover {
+    background: var(--home-accent);
+    color: #fff !important;
+    text-decoration: none;
+}
+
+/* ========================================
+   Dataview styling
+   ======================================== */
+
+.home .dataview {
+    font-size: 0.9em;
+}
+
+.home .dataview .table-view-table {
+    border-radius: var(--home-radius-sm);
+}
+
+/* ========================================
+   Calendar sidebar plugin styling
+   ======================================== */
+
+#calendar-container {
+    padding: 8px;
+}
+
+#calendar-container .year {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--home-text, #c5d0f4);
+}
+
+#calendar-container table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+#calendar-container th {
+    color: var(--home-text-muted, #8892b0);
+    font-size: 0.8em;
+    font-weight: 500;
+    padding: 4px;
+    text-align: center;
+}
+
+#calendar-container td {
+    text-align: center;
+    padding: 2px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+#calendar-container td:hover {
+    background: var(--home-bg-card, #303445);
+}
+
+#calendar-container .today {
+    color: #fff !important;
+    font-weight: 700;
+    background: var(--home-accent, #cd0952) !important;
+    border-radius: 6px;
+}
+
+#calendar-container .active .dot,
+#calendar-container .dot {
+    background: var(--home-accent, #cd0952) !important;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin: 2px auto 0;
+}
+
+#calendar-container .has-note {
+    font-weight: 600;
+}
+
+#calendar-container .arrow {
+    cursor: pointer;
+    color: var(--home-text-muted, #8892b0);
+    transition: color 0.15s ease;
+}
+
+#calendar-container .arrow:hover {
+    color: var(--home-accent, #cd0952);
+}
+
+#calendar-container .reset-button {
+    font-size: 0.8em;
+    color: var(--home-accent, #cd0952);
+    cursor: pointer;
+}
+
+/* ========================================
+   Scrollbar
+   ======================================== */
+
+.home ::-webkit-scrollbar {
+    width: 6px;
+}
+
+.home ::-webkit-scrollbar-track {
+    background: var(--home-bg);
+}
+
+.home ::-webkit-scrollbar-thumb {
+    background: var(--home-border);
+    border-radius: 3px;
+}
+
+.home ::-webkit-scrollbar-thumb:hover {
+    background: var(--home-accent);
+}
+
+/* ========================================
+   Links styling
+   ======================================== */
+
+.home a.internal-link {
+    color: var(--home-text) !important;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.home a.internal-link:hover {
+    color: var(--home-accent) !important;
+}
+
+/* Unresolved links */
+.home a.is-unresolved {
+    opacity: 0.6;
+}

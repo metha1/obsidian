@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api:*)",
+      "Bash(du -sh /home/metha/Documents/code/obsidian/*)",
+      "Bash(curl -s \"https://api.github.com/search/repositories?q=obsidian+homepage+dashboard+template&sort=stars&per_page=5\")",
+      "Bash(python3 -c \"import sys,json; data=json.load\\(sys.stdin\\); [print\\(f''''{r[full_name]} \\({r[stargazers_count]}*\\): {r[description]}''''\\) for r in data.get\\(''''items'''',[]\\)]\")",
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "WebFetch(domain:medium.com)",
+      "WebFetch(domain:forum.obsidian.md)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:dannb.org)",
+      "WebFetch(domain:gist.github.com)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(for p:*)",
+      "Bash(do echo:*)",
+      "Read(//home/metha/Documents/code/obsidian/.obsidian/plugins/$p/**)",
+      "Bash(done)"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "height": 200,
+  "style": "solid",
+  "showInInternalEmbed": true,
+  "bannerDragModifier": "shift",
+  "frontmatterField": "banner",
+  "enableDrag": true,
+  "showPreviewInLocalModal": true,
+  "localSuggestionsLimit": 10,
+  "enableReleaseNotes": false
+}

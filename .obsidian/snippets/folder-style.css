@@ -1,0 +1,106 @@
+/* ========================================
+   Folder Descriptions & Color Coding
+   ======================================== */
+
+/* Folder descriptions — subtitle text under folder names */
+.nav-folder-title[data-path="Daily Notes"] .nav-folder-title-content::after {
+    content: "Testing Logs";
+    display: block;
+    font-size: 0.75em;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.nav-folder-title[data-path="Sprints"] .nav-folder-title-content::after {
+    content: "Sprint Planning";
+    display: block;
+    font-size: 0.75em;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.nav-folder-title[data-path="Bugs"] .nav-folder-title-content::after {
+    content: "Defect Reports";
+    display: block;
+    font-size: 0.75em;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.nav-folder-title[data-path="Test Cases"] .nav-folder-title-content::after {
+    content: "Test Scenarios";
+    display: block;
+    font-size: 0.75em;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.nav-folder-title[data-path="Test Plans"] .nav-folder-title-content::after {
+    content: "Strategy Docs";
+    display: block;
+    font-size: 0.75em;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.nav-folder-title[data-path="Test Executions"] .nav-folder-title-content::after {
+    content: "Execution Logs";
+    display: block;
+    font-size: 0.75em;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.nav-folder-title[data-path="Templates"] .nav-folder-title-content::after {
+    content: "Note Templates";
+    display: block;
+    font-size: 0.75em;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.nav-folder-title[data-path="Attachments"] .nav-folder-title-content::after {
+    content: "Files & Images";
+    display: block;
+    font-size: 0.75em;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+/* Folder color coding */
+.nav-folder-title[data-path="Daily Notes"] {
+    border-left: 3px solid #6c71c4;
+}
+
+.nav-folder-title[data-path="Sprints"] {
+    border-left: 3px solid #cd0952;
+}
+
+.nav-folder-title[data-path="Bugs"] {
+    border-left: 3px solid #e74c3c;
+}
+
+.nav-folder-title[data-path="Test Cases"] {
+    border-left: 3px solid #3498db;
+}
+
+.nav-folder-title[data-path="Test Plans"] {
+    border-left: 3px solid #2ecc71;
+}
+
+.nav-folder-title[data-path="Test Executions"] {
+    border-left: 3px solid #f39c12;
+}
+
+.nav-folder-title[data-path="Templates"] {
+    border-left: 3px solid #a78bfa;
+}
+
+.nav-folder-title[data-path="Attachments"] {
+    border-left: 3px solid #8892b0;
+}
+
+/* Rounded folder containers */
+.nav-folder-children {
+    border-radius: 6px;
+}
