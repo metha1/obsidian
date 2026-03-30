@@ -276,6 +276,8 @@
   },
   "active": "ba04dde2695086b9",
   "lastOpenFiles": [
+    "README.md",
+    "README.md.tmp.1292.1774850895198",
     "Daily Notes/2026-03-30.md",
     "Homepage.md",
     "Homepage.md.tmp.1292.1774850655831",
@@ -297,7 +299,6 @@
     "Test Cases/MobileApp/Login/TC-Mob-Login-001-Valid-Login.md.tmp.1292.1774848879693",
     "Test Cases/API/Authentication/TC-API-Auth-001-Token-Generation.md.tmp.1292.1774848876625",
     "Test Cases/WebApp/User Management/TC-User-001-Create-User.md",
-    "Test Cases/WebApp/User Management/TC-User-001-Create-User.md.tmp.1292.1774848873509",
     "Test Cases/WebApp/Dashboard/TC-Dash-001-Load-Dashboard.md",
     "Test Cases/WebApp/Login/TC-Login-002-Invalid-Password.md",
     "Test Cases/WebApp/Login/TC-Login-001-Valid-Login.md",
